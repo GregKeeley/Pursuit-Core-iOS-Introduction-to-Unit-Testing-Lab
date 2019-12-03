@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Star Wars View Controller-->
+        <!--Star Wars-->
         <scene sceneID="Pla-RB-VaX">
             <objects>
                 <viewController id="kFm-et-e4v" customClass="StarWarsViewController" customModule="IntroToUnitTests" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,13 +39,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NuH-Nx-jUR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ggt-dm-Znh"/>
+                    <navigationItem key="navigationItem" title="Star Wars" id="Ggt-dm-Znh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6qY-1q-wbj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="-558"/>
+            <point key="canvasLocation" x="1519" y="-541"/>
         </scene>
-        <!--Jokes View Controller-->
+        <!--Jokes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="JokesViewController" customModule="IntroToUnitTests" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,7 +57,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="85" id="FQq-v9-71e">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="jokeCell" rowHeight="85" id="FQq-v9-71e">
                                         <rect key="frame" x="0.0" y="28" width="414" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FQq-v9-71e" id="mRz-ov-JdE">
@@ -77,13 +77,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oia-5e-KhQ"/>
+                    <navigationItem key="navigationItem" title="Jokes" id="oia-5e-KhQ"/>
+                    <connections>
+                        <outlet property="tableview" destination="jmS-xc-1Uf" id="g23-l7-3Sf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1519" y="115"/>
         </scene>
-        <!--Trivia View Controller-->
+        <!--Trivia-->
         <scene sceneID="7Mj-O6-oeS">
             <objects>
                 <viewController id="Bps-sH-J0T" customClass="TriviaViewController" customModule="IntroToUnitTests" customModuleProvider="target" sceneMemberID="viewController">
@@ -115,15 +118,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tyu-B2-oDq"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Cnj-1F-wq9"/>
+                    <navigationItem key="navigationItem" title="Trivia" id="Cnj-1F-wq9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rn-eN-4bz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958" y="769"/>
+            <point key="canvasLocation" x="1546" y="769"/>
         </scene>
         <!--Item-->
         <scene sceneID="8za-bi-ESN">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wMJ-2G-F8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4LN-1M-JDA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Oqr-ad-hQe"/>
                     <toolbarItems/>
@@ -136,16 +140,17 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dck-rP-Ksp"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wMJ-2G-F8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+            <point key="canvasLocation" x="816" y="115"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ret-Ei-Im8">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ion-yv-fJl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TpJ-QW-OHq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N4F-Y6-5Ed">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -153,13 +158,13 @@
                         <segue destination="4LN-1M-JDA" kind="relationship" relationship="viewControllers" id="K8h-lx-w2g"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ion-yv-fJl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="deN-Jb-G6S">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIN-F3-fMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wwp-Kw-knV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zdP-ur-uMG">
@@ -171,13 +176,13 @@
                         <segue destination="Bps-sH-J0T" kind="relationship" relationship="rootViewController" id="1eb-N5-8wF"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AIN-F3-fMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="769"/>
+            <point key="canvasLocation" x="816" y="769"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IVT-ug-uXI">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzq-7X-WuR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Bv-v4-I0P" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6wY-rH-FKZ">
@@ -189,9 +194,8 @@
                         <segue destination="kFm-et-e4v" kind="relationship" relationship="rootViewController" id="ngh-ys-ADt"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bzq-7X-WuR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048" y="-558"/>
+            <point key="canvasLocation" x="816" y="-541"/>
         </scene>
     </scenes>
 </document>

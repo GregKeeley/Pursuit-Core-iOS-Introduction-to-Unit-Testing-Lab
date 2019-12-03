@@ -18,5 +18,21 @@ class IntroToUnitTestsTests: XCTestCase {
     override func tearDown() {
 
     }
-    
+    func testReadingDataFromJokesFile() {
+        let filename = "jokes"
+        let ext = "json"
+        let data = Bundle.readRawJSONData(filename: filename, ext: ext)
+        XCTAssertNotNil(data)
+    }
+    func testReadingDataFromStarWarsFile() {
+        let filename = "StarWars"
+        let ext = "json"
+        let data = Bundle.readRawJSONData(filename: filename, ext: ext)
+        XCTAssertNotNil(data)
+    }
+    func testReadingDataFromTriviaFile() {
+        let filename = "Trivia"
+        let ext = "json"
+        let data = Bundle.readRawJSONData(filename: filename, ext: ext)
+    }
 }
